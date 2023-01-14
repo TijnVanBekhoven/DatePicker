@@ -1,11 +1,11 @@
-.main-buttons {
-
+.main-buttons a {
+    color: white;
+    text-decoration: none;
 }
 
 .main-buttons .button {
-    border: 2px solid var(--navy);
     border-radius: 7px;
-    background-color: rgba(var(--navy-rgb), .20);
+    background-color: var(--navy);
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
