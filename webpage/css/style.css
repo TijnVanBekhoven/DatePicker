@@ -94,7 +94,7 @@ main p::selection {
     background-color: whitesmoke;
 }
 
-h2 {
+h3 {
     border-left: 4px solid var(--navy);
     padding-left: 5px;
 }
