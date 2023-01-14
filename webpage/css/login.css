@@ -1,0 +1,17 @@
+form {
+    padding-inline: 10px;
+    padding-right: 20px;
+}
+
+form input {
+    margin-inline: 10px;
+}
+
+form input[type=email],input[type=password] {
+    width: 100%;
+}
+
+form input[type=submit] {
+    margin-top: 10px;
+    width: 150px;
+}
