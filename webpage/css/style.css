@@ -1,0 +1,101 @@
+:root {
+    --navy: #2B3A55;
+    --navy-rgb: 43, 58, 85;
+    --peach: #CE7777;
+}
+
+header {
+    background-color: var(--navy);
+    color: white;
+}
+
+header .navbar {
+    text-align: center;
+}
+
+main .container {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--navy);
+    color: white;
+}
+
+footer li {
+    padding: 20px;
+    list-style: none;
+    font-size: 15px;
+}
+
+footer ul {
+    padding-left: 0px;
+    margin-bottom: 8px;
+    font-size: .9em;
+}
+
+.navbar {
+    padding-inline: 30px;
+}
+
+.navbar ul {
+    margin-inline: 15px;
+}
+
+.navbar li {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navlist ul {
+    padding-left: 2px;
+    margin-left: px;
+}
+
+.navlist ul:hover {
+    animation-name: underline;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline {
+    from {border-left: 0px solid white;}
+    to {border-left: 3px solid white;}
+}
+
+.button {
+    
+}
+
+.button:hover {
+    opacity: 70%;
+    transition: .3s;
+}
+
+.bg-gray hr {
+    height: 3px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--navy);
+    margin-inline: 2%;
+    opacity: 20%;
+}
+
+main p::selection {
+    color: var(--peach);
+}
+
+.bg-gray {
+    background-color: whitesmoke;
+}
+
+h2 {
+    border-left: 4px solid var(--navy);
+    padding-left: 5px;
+}

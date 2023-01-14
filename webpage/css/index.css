@@ -1,0 +1,15 @@
+.main-buttons {
+
+}
+
+.main-buttons .button {
+    border: 2px solid var(--navy);
+    border-radius: 7px;
+    background-color: rgba(var(--navy-rgb), .20);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
