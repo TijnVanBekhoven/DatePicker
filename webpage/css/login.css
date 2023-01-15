@@ -7,7 +7,7 @@ form input {
     margin-inline: 10px;
 }
 
-form input[type=email],input[type=password] {
+form input[type=email],input[type=password],input[type=text] {
     width: 100%;
 }
 

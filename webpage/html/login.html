@@ -35,7 +35,7 @@
               <input type="email" id="emailLogin" required>
 
               <label for="passwordLogin">Password</label>
-              <input type="password" id="passwordLogin" required>
+              <input type="password" id="passwordLogin" maxlength="64" required>
 
               <input type="submit" value="Login">
             </form>
@@ -43,14 +43,17 @@
           <div class="col-sm-12 col-md-4">
             <h3>Make new account</h3>
             <form action="">
+              <label for="usernameRegister">Username</label>
+              <input type="text" id="usernameRegister" maxlength="50" required>
+
               <label for="emailRegister">Email</label>
               <input type="email" id="emailRegister" required>
 
               <label for="passwordRegister">Password</label>
-              <input type="password" id="passwordRegister" required>
+              <input type="password" id="passwordRegister" maxlength="64" required>
 
               <label for="passwordRegisterRepeat">Repeat password</label>
-              <input type="password" id="passwordRegisterRepeat" required>
+              <input type="password" id="passwordRegisterRepeat" maxlength="64" required>
 
               <input type="submit" value="Create account">
             </form>
