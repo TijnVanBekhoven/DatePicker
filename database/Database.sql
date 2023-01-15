@@ -15,6 +15,7 @@ CREATE TABLE Planner (
 	Name nvarchar(50) NOT NULL,
 	StartDate date NOT NULL,
 	EndDate date NOT NULL,
+	[Password] nvarchar(64),
 
 	CONSTRAINT CHK_EndDate CHECK (EndDate >= StartDate)
 );
