@@ -26,8 +26,8 @@ CREATE TABLE Owns (
 	CreationDate date NOT NULL DEFAULT GETDATE(),
 
 	CONSTRAINT PK_Owns PRIMARY KEY (Username, PlannerID),
-	CONSTRAINT FK_Owns_Username FOREIGN KEY (Username) REFERENCES [User](Username),
-	CONSTRAINT FK_Owns_PlannerID FOREIGN KEY (PlannerID) REFERENCES Planner(ID)
+	CONSTRAINT FK_Owns_Username FOREIGN KEY (Username) REFERENCES [User](Username) ON UPDATE CASCADE ON DELETE CASCADE,
+	CONSTRAINT FK_Owns_PlannerID FOREIGN KEY (PlannerID) REFERENCES Planner(ID) ON DELETE CASCADE
 );
 
 CREATE TABLE Participates (
@@ -35,8 +35,8 @@ CREATE TABLE Participates (
 	PlannerID nvarchar(8) NOT NULL,
 
 	CONSTRAINT PK_Participates PRIMARY KEY (Username, PlannerID),
-	CONSTRAINT FK_Participates_Username FOREIGN KEY (Username) REFERENCES [User](Username),
-	CONSTRAINT FK_Participates_PlannerID FOREIGN KEY (PlannerID) REFERENCES Planner(ID)
+	CONSTRAINT FK_Participates_Username FOREIGN KEY (Username) REFERENCES [User](Username) ON UPDATE CASCADE ON DELETE CASCADE,
+	CONSTRAINT FK_Participates_PlannerID FOREIGN KEY (PlannerID) REFERENCES Planner(ID) ON DELETE CASCADE
 );
 
 CREATE TABLE AvailableDates (
@@ -46,5 +46,5 @@ CREATE TABLE AvailableDates (
 	Available bit NOT NULL,
 
 	CONSTRAINT PK_AvailableDates PRIMARY KEY (Username, PlannerID, [Date]),
-	CONSTRAINT FK_AvailableDates_Username FOREIGN KEY (Username, PlannerID) REFERENCES Participates(Username, PlannerID)
+	CONSTRAINT FK_AvailableDates_Username FOREIGN KEY (Username, PlannerID) REFERENCES Participates(Username, PlannerID)  ON UPDATE CASCADE ON DELETE CASCADE
 );
