@@ -1,0 +1,22 @@
+.copy-url {
+    font-size: .8em;
+}
+
+.planner-buttons a {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.btn-open {
+    background-color: var(--navy);
+    color: white;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+}
