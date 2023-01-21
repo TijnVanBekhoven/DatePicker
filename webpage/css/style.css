@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    margin-inline: 2vw;
+    list-style: none;
+}
+
+nav ul {
+    padding-inline: 1vw;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+footer {
+    padding-inline: 12vw;
+    background-color: whitesmoke;
+    padding-block: 30px;
+}
+
+footer .links {
+    margin-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer ul {
+    padding-left: 0px;
+    margin-block: 5px;
+}
+
+footer .social-media li {
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-media ul {
+    padding-inline: 2%;
+}

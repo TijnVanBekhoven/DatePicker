@@ -1,0 +1,151 @@
+/* CSS Grid */
+
+.create {
+    grid-area: create;
+}
+
+.share {
+    grid-area: share;
+}
+
+.join {
+    grid-area: join;
+}
+
+.reward {
+    grid-area: reward;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'nav' 'header' 'create' 'share' 'join' 'reward' 'footer';
+}
+
+/* Styling */
+
+header .img {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+
+header .buttons {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    flex-direction: column;
+    align-items: stretch;
+    padding-inline: 10%;
+    gap: 10vw;
+}
+
+header .buttons div {
+    background-color: blue;
+    color: white;
+    height: 80vw;
+    text-align: center;
+    line-height: 80vw;
+}
+
+header .buttons > *:hover {
+    opacity: 70%;
+    transition: .3s;
+}
+
+section {
+    padding-inline: 12vw;
+    padding-block: 100px;
+}
+
+section .img {
+    background-color: red;
+    height: 50vw;
+    margin-top: 5px;
+}
+
+section .text-container > * {
+    margin-block: 5px;
+}
+
+section .button {
+    display: inline-block;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+section .button:hover {
+    opacity: 70%;
+    transition: .3s;
+}
+
+.left-text {
+    background-color: whitesmoke;
+}
+
+.right-text .right-img-1 {
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 750px) {
+    header .buttons {
+        flex-direction: initial;
+        justify-content: space-evenly;
+    }
+
+    header .buttons div {
+        width: 22vw;
+        height: 22vw;
+        line-height: 22vw;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    section {
+        display: flex;
+    }
+
+    section .text-container {
+        display: inline-block;
+        width: 50%;
+    }
+
+    section .img {
+        margin-block: 10px;
+        width: 40%;
+        height: auto;
+    }
+
+    .left-text .img {
+        margin-left: auto;
+    }
+
+    .right-text .img {
+        margin-right: auto;
+    }
+
+    section .button {
+        width: 30%;
+    }
+
+    .right-text .right-img-1 {
+        display: initial;
+    }
+
+    .right-text .right-img-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    header .buttons div {
+        width: 16vw;
+        height: 16vw;
+        line-height: 16vw;
+    }
+}
