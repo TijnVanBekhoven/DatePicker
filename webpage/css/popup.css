@@ -1,6 +1,6 @@
 body {
     padding-block: 20px;
-    padding-inline: 100px;
+    padding-inline: 70px;
     background-color: white;
 }
 
@@ -12,13 +12,12 @@ form label {
     margin-right: 100%;
 }
 
-form input[type=text],input[type=password] {
+form input[type=text],input[type=password],input[type=email] {
     width: 100%;
 }
 
-form > a {
-    display: block;
-    margin-bottom: 30px;
+form .input-cluster {
+    padding-bottom: 20px;
 }
 
 .links {
