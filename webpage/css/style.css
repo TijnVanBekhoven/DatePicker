@@ -62,7 +62,7 @@ footer .social-media ul {
 /* Media Queries */
 
 @media screen and (min-width: 750px) {
-    .login-frame {
+    .popup-frame {
         position: absolute;
         top: 10vh;
         left: calc(50vw - 200px);
