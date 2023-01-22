@@ -1,0 +1,41 @@
+body {
+    padding-block: 20px;
+    padding-inline: 100px;
+    background-color: white;
+}
+
+.close {
+    text-align: right;
+}
+
+form label {
+    margin-right: 100%;
+}
+
+form input[type=text],input[type=password] {
+    width: 100%;
+}
+
+form > a {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    line-height: auto;
+}
+
+.button {
+    padding: 5px;
+    width: 15vw;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 70%;
+    transition: .3s;
+}
