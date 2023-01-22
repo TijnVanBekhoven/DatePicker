@@ -14,9 +14,9 @@ function closePopup() {
     const body = document.querySelector("body");
     const container = document.getElementById("container");
 
-
     body.removeAttribute("scroll");
     body.style.overflow = "initial";
     container.style.pointerEvents = "initial";
     popupScreen.style.display = "none";
+    popupScreen.src += '';
 }
