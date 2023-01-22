@@ -1,5 +1,5 @@
 function showPopup() {
-    const popupScreen = document.getElementById("loginPopup");
+    const popupScreen = document.getElementById("popup");
     const body = document.querySelector("body");
     const container = document.getElementById("container");
 
@@ -10,7 +10,7 @@ function showPopup() {
 }
 
 function closePopup() {
-    const popupScreen = document.getElementById("loginPopup");
+    const popupScreen = document.getElementById("popup");
     const body = document.querySelector("body");
     const container = document.getElementById("container");
 
