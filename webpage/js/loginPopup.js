@@ -1,4 +1,4 @@
-function showLogin() {
+function showPopup() {
     const popupScreen = document.getElementById("loginPopup");
     const body = document.querySelector("body");
     const container = document.getElementById("container");
@@ -9,7 +9,7 @@ function showLogin() {
     popupScreen.style.display = "initial";
 }
 
-function closeLogin() {
+function closePopup() {
     const popupScreen = document.getElementById("loginPopup");
     const body = document.querySelector("body");
     const container = document.getElementById("container");
