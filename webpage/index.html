@@ -7,9 +7,11 @@
     <title>Homepage | Date picker</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/loginPopup.js"></script>
 </head>
 <body>
-    <div class="container">
+    <iframe src="login-popup.html" id="loginPopup" class="login-frame"></iframe>
+    <div class="container" id="container">
         <nav>
             <li>
                 <ul><a href="">Home</a></ul>
@@ -18,7 +20,7 @@
                 <ul><a href="">View</a></ul>
             </li>
             <li class="align-right">
-                <ul><a href="">Login</a></ul>
+                <ul><a onclick="showLogin()">Login</a></ul>
             </li>
         </nav>
         <header>
