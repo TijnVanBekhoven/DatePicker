@@ -65,8 +65,8 @@ footer .social-media ul {
     .popup-frame {
         position: absolute;
         top: 10vh;
-        left: calc(50vw - 200px);
-        width: 400px;
+        left: calc(50vw - 225px);
+        width: 450px;
         height: 80vh;
     }
 }
