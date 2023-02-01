@@ -11,6 +11,8 @@ import java.sql.Statement;
  * First, open connection with openConnection();
  * Then, do CRUD by using push() and pull();
  * Finally, close connection with closeConnection();
+ * 
+ * Note, the database is not protected against injections;
  */
 
 public class Database {
@@ -41,6 +43,7 @@ public class Database {
         }
     }
 
+    // Open connection to database
     public static void openConnection() {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -50,6 +53,7 @@ public class Database {
         }
     }
 
+    // Close connection to database
     public static void closeConnection() {
         if (rs != null) try { rs.close(); } catch(Exception e) {}
         if (stmt != null) try { stmt.close(); } catch(Exception e) {}
